@@ -3,4 +3,4 @@
 
 コードを利用する場合は、バージョンに応じて以下のように出典を記載していただくとありがたいです。
 
-麦山亮太，2024，「SSM職歴データのパーソンイヤーデータへの変換 ver1.0」（2024年5月31日閲覧，https://github.com/ryotamugiyama/ssm2015personyear）．
+麦山亮太，2024，「SSM職歴データのパーソンイヤーデータへの変換 ver1.0」（2024年5月31日閲覧，https://github.com/ryotamugiyama/ssm2015personyear ）．
