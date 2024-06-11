@@ -2,7 +2,7 @@
 全do-fileを統合するmaster do-file
 
 Author: Ryota Mugiyama
-Date: 2024-05-31
+Date: 2024-06-11
 
 Notes:
 あらかじめ次のようにフォルダとファイルを置いておく必要があります
@@ -21,6 +21,9 @@ Notes:
       - 3_2_eventhistory.do
       - 3_3_fixedeffect.do
    - results
+
+working directoryは../project/codeとする必要があります
+code上のdo-fileを開くと、当該フォルダがworking directoryに設定されます
 
 resultsのフォルダは、3.1（レキシス図の作成）をやらないのなら不要です
 -------------------------*/ 
