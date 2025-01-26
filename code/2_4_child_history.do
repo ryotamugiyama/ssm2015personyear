@@ -6,6 +6,7 @@ Date: 2024-06-11
 
 Notes: 
 2024-06-11 無回答ケースについての細かな修正を追加
+2025-01-26 第i子が生まれたときの回答者の年齢の計算方法の修正
 -------------------------*/ 
 
 *** 第i子が生まれた年（実子・養子区別なし）
@@ -23,7 +24,7 @@ forvalues i = 1/4{
 *** 第i子が生まれたときの回答者の年齢（実子・養子区別なし）
 forvalues i = 1/4{
 	gen age_birth`i' = .
-	replace age_birth`i' = birthyear_child`i' - birthyear - 1 if birthyear_child`i' != 8888 & birthyear_child`i' != 9999
+	replace age_birth`i' = birthyear_child`i' - birthyear if birthyear_child`i' != 8888 & birthyear_child`i' != 9999
 	replace age_birth`i' = 8888 if birthyear_child`i' == 8888	
 
 	lab var age_birth`i' "第`i'子が生まれたときの年齢"
