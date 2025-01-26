@@ -1,7 +1,7 @@
 ## 婚姻歴関連変数の作成
 ## 
 ## Author: Ryota Mugiyama
-## Date: 2024-06-11
+## Date: 2025-01-26
 ## Notes: 
 ## Variables:
 ##   birthyear_child'i' "第'i'子が生まれた年"
@@ -47,19 +47,19 @@ ssm2015personyear <- ssm2015personyear %>%
 ssm2015personyear <- ssm2015personyear %>% 
   mutate(
     age_birth1 = case_when(
-      birthyear_child1 != 8888 & birthyear_child1 != 9999 ~ birthyear_child1 - birthyear - 1,
+      birthyear_child1 != 8888 & birthyear_child1 != 9999 ~ birthyear_child1 - birthyear,
       birthyear_child1 == 8888 ~ 8888
     ),
     age_birth2 = case_when(
-      birthyear_child2 != 8888 & birthyear_child2 != 9999 ~ birthyear_child2 - birthyear - 1,
+      birthyear_child2 != 8888 & birthyear_child2 != 9999 ~ birthyear_child2 - birthyear,
       birthyear_child2 == 8888 ~ 8888
     ),
     age_birth3 = case_when(
-      birthyear_child3 != 8888 & birthyear_child3 != 9999 ~ birthyear_child3 - birthyear - 1,
+      birthyear_child3 != 8888 & birthyear_child3 != 9999 ~ birthyear_child3 - birthyear,
       birthyear_child3 == 8888 ~ 8888
     ),
     age_birth4 = case_when(
-      birthyear_child4 != 8888 & birthyear_child4 != 9999 ~ birthyear_child4 - birthyear - 1,
+      birthyear_child4 != 8888 & birthyear_child4 != 9999 ~ birthyear_child4 - birthyear,
       birthyear_child4 == 8888 ~ 8888
     )) 
 
